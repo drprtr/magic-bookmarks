@@ -90,6 +90,12 @@
             </tr>
 
             <script type="text/javascript">
+            /*
+                importGSS() is called from the callback at the end of the Google Spreadsheet reference in the second script
+                creates a JSON object that contains all the data from the spreadsheet
+                we loop through json.feed.entry which contains each row of the spreadsheet
+                we split each row into individual cells (known) then parse them into user friendly html
+            */
 
                 function importGSS(json) {
                     console.log('finished');
@@ -106,7 +112,7 @@
 
                         var name = cells[0].replace(/[a-z]*: /i, '');
                         var url = cells[1].replace(/[a-z]*: /i, '');
-                        var link = '<a href="' + url + '" target-"_blank">' + url + '</a>';
+                        var link = '<a href="' + url + '" target="_blank">' + url + '</a>';
                         var description = cells[2].replace(/[a-z]*: /i, '');
 
                         var line = '<td>' + name + '</td>' + '<td>' + link + '</td>' + '<td>' + description + '</td>';
