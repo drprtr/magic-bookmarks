@@ -81,6 +81,13 @@
         <!-- /.row -->
 
         <div class="row">
+        	<p>
+        		<a onCLick="window.location.reload()"><button  class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span> Refresh</button></a> 
+        		<a href="https://drive.google.com/open?id=1s3y1CP3PeQrV1ktRuSGDzX4AyrNhbN9S2BeXVBWnTFg&authuser=0"><button  class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Edit</button></a>
+        	</p>
+    	</div>
+
+        <div class="row">
 
         <table class="table table-striped">
             <tr>
